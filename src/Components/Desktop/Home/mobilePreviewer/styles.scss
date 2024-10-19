@@ -1,0 +1,27 @@
+.previewerMain{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    .prevImg,.nextImg{
+        position: absolute;
+        transform: translateY(-50%);
+        top: 39%;
+        background-color: white;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.75rem;
+        border: none;
+        z-index: 10;
+    }
+    .nextImg{
+        right: 5%;
+        top: 39.5%;
+    }
+    .prevImg{
+        left: 5%;
+    }
+}
