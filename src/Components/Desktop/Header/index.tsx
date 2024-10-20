@@ -13,7 +13,7 @@ interface GithubUserData {
 
 function Header() {
 
-  const [data, setData] = useState<GithubUserData | null>(null);
+const [data, setData] = useState<GithubUserData | null>(null);
 const [showCart, setShowCart] = useState(false)
 const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth<=768)
 const [showSideBar, setSHowSideBar] = useState(false)

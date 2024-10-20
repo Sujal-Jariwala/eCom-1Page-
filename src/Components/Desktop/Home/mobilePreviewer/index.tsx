@@ -18,10 +18,11 @@ function Previewer({images, imageIndex}: PreviewProps) {
     }
   return (
     <div className='previewerMain'>
-        <div className='imgSlider'>
+        <div className='imgSlider' style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+            {images.map((image, index)=>(
+                <img src={image} key={index} alt="" />
+            ))} 
             
-        <img key={currentImageIndex} src={images[currentImageIndex]} alt="productImage" />
-
         </div>
         <div className='prevImg'>
             <IoIosArrowBack size={16} style={{
